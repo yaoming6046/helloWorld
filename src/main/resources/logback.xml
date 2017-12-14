@@ -6,7 +6,7 @@
     <!-- 默认日志输出格式 -->
     <contextName>${HOSTNAME}</contextName>
     <property name="DEFAULT_PATTERN"
-              value="%d{yyyy-MM-dd HH:mm:ss.SSS}$$[%thread]$$[%trace]$$%-5level{}$$yiqixue$$%msg%n"/>
+              value="%d{yyyy-MM-dd HH:mm:ss.SSS}$$[%thread]$$[%trace]$$%-5level{}$$helloworld$$%msg%n"/>
     <property name="MAX_HISTORY" value="30"/>
     <!-- 常量定义end -->
 
