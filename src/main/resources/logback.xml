@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+    <!-- 常量定义start -->
+    <!-- 默认日志输出格式 -->
+    <contextName>${HOSTNAME}</contextName>
+    <property name="DEFAULT_PATTERN"
+              value="%d{yyyy-MM-dd HH:mm:ss.SSS}$$[%thread]$$[%trace]$$%-5level{}$$yiqixue$$%msg%n"/>
+    <property name="MAX_HISTORY" value="30"/>
+    <!-- 常量定义end -->
+
+    <!-- 默认日志的console appender，本地使用的日志 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="com.hualala.logger.logback.spe.MyEncoder">
+            <pattern>${DEFAULT_PATTERN}</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+
+    <root level="info">
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>
